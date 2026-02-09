@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi To-Do List Saya</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="todo-container">
+        <h1 class="todo-title">📝 Aplikasi To-Do List Saya</h1>
+
+        <!-- FORM INPUT -->
+        <div class="input-section">
+            <input type="text" id="taskInput" placeholder="Tambahkan tugas baru...">
+            <button id="addTaskBtn">Tambah Tugas</button>
+        </div>
+
+        <!-- FILTER -->
+        <div class="filter-section">
+            <button class="filter-btn active" data-filter="all">Semua</button>
+            <button class="filter-btn" data-filter="active">Belum Selesai</button>
+            <button class="filter-btn" data-filter="completed">Selesai</button>
+        </div>
+
+        <!-- DAFTAR TUGAS -->
+        <ul id="taskList" class="task-list"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

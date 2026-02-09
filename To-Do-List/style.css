@@ -1,0 +1,123 @@
+/* SETTING AWAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+/* CONTAINER UTAMA */
+.todo-container {
+    max-width: 600px;
+    margin: 30px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+}
+
+/* JUDUL */
+.todo-title {
+    text-align: center;
+    color: #2ecc71;
+    margin-bottom: 25px;
+    font-size: 2rem;
+}
+
+/* INPUT SECTION */
+.input-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.input-section input {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #2ecc71;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.input-section button {
+    padding: 10px 20px;
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.input-section button:hover {
+    background-color: #27ae60;
+}
+
+/* FILTER SECTION */
+.filter-section {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.filter-btn {
+    padding: 8px 15px;
+    margin: 0 5px;
+    border: 1px solid #2ecc71;
+    border-radius: 5px;
+    background-color: white;
+    color: #2ecc71;
+    cursor: pointer;
+}
+
+.filter-btn.active {
+    background-color: #2ecc71;
+    color: white;
+}
+
+/* TASK LIST */
+.task-list {
+    list-style: none;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 5px;
+}
+
+.task-item.completed span {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.task-actions button {
+    margin-left: 5px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    color: white;
+}
+
+.complete-btn {
+    background-color: #3498db;
+}
+
+.delete-btn {
+    background-color: #e74c3c;
+}
+
+/* RESPONSIF */
+@media (max-width: 500px) {
+    .input-section {
+        flex-direction: column;
+    }
+}
